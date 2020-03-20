@@ -12,6 +12,6 @@ process HDF5ParseMatrix {
 
     script:
         """ 
-        python3 /root/main.py --inpath params.inpath --outpath params.outpath --dtype params.dtype --save params.save --exp params.exp
+        python3 /root/main.py --inpath ${params.inpath} --outpath ${params.outpath} --dtype ${params.dtype} --save ${params.save} --exp ${params.exp}
         """ 
 }
